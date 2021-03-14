@@ -7,7 +7,7 @@ $dbname = "myDB";
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
-$contact=$_POST['Contact'];
+$contact=$_POST['contact'];
 $messages=$_POST['messages'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
