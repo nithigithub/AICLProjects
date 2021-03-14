@@ -23,7 +23,8 @@ if ($result->num_rows > 0) {
     echo "<td>" . $row['lastname']  . "</td>";
     echo "<td>" . $row['contact'] . "</td>";
     echo "<td>" . $row['email'] . "</td>";
-    echo "<td>" . $row['messages'] . "</td></tr>";
+    echo "<td>" . $row['messages'] . "</td>"; 
+    "</tr>";
     echo "</table>";
   }
 } else {
