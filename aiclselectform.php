@@ -2,20 +2,20 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "AICLformDB";
+$dbname = "myDB";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM AICLformTable";
+$sql = "SELECT * FROM AiclTables";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
+    
   while($row = $result->fetch_assoc()) {
     echo "<table border='1'>";
     echo"<tr><th>Firstname</th><th>Contact</th><th>Message</th></tr>";
