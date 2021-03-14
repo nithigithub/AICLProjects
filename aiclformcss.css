@@ -7,7 +7,7 @@
 
 input[type="text"],
 input[type="number"],
-input[type="email"] {
+input[type="message"] {
     border: 1px solid cyan;
 }
 
