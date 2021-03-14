@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     echo "<table border='1'>";
     echo"<tr><th>firstname</th><th>lastname</th><th>contact</th><th>email</th><th>message</th></tr>";
     echo "<tr><td>" . $row['firstname']
-    echo "<td>".$row['lastname'] 
+    echo "<td>" . $row['lastname'] 
     echo "<td>". $row['contact'] 
     echo  "<td>". $row['email'] 
     echo "<td>". $row['messages'] . "</td></tr>";
