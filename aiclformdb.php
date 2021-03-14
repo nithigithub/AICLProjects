@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myDB";
+$dbname = "aiclstudents";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,13 +13,13 @@ if ($conn->connect_error) {
 
 $firstname = $_POST['firstName'];
 $latename = $_POST['lastname'];
-$email = $_POST['email'];
-$contact=$_POST['contact'];
+$contact = $_POST['contact'];
+$email=$_POST['email'];
 $messages=$_POST['messages'];
 
 
-$sql = "INSERT INTO AiclTables (firstname,lastname, email, contact, messages)
-VALUES ('$firstname','$lastname','$email','$contact','$messages')";
+$sql = "INSERT INTO Aicldetail (firstname, lastname, contact, email, messages)
+VALUES ('$firstname','$lastname','$contact','$email','$messages')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record inserted successfully";

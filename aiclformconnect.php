@@ -14,7 +14,7 @@ if($conn->connect_error){
 }
 echo "connection established!!!";
 
-$sql="Create Database myDB";
+$sql="Create Database aiclstudents";
 if ($conn->query($sql)=== TRUE){
     echo "Database aiclDB created";
 }   else{
