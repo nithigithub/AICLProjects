@@ -13,7 +13,7 @@ if($conn->connect_error){
 }
 echo "connected successfully!!!";
 // Create database
-$sql = "CREATE DATABASE aiclDB";
+$sql = "CREATE DATABASE Aicldetail";
 if ($conn->query($sql) === TRUE) {//passing the sql here
   echo "Database aiclDB created successfully";
 } else {
