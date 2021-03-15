@@ -1,31 +1,27 @@
+<html>
+<head>
+<h1>first program</h1>
+<body>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "aiclstudents";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$servername="localhost";
+$username="root";
+$password="";
+//Create connection
+$conn=new mysqli($servername,$username,$password);
+//Check connection
+if($conn->connect_error){
+    die("unable to connect" . $conn->connect_error);
 }
-
-$firstname = $_POST['firstName'];
-$latename = $_POST['lastname'];
-$contact = $_POST['contact'];
-$email=$_POST['email'];
-$messages=$_POST['messages'];
-
-
-$sql = "INSERT INTO Aicldetail (firstname, lastname, contact, email, messages)
-VALUES ('$firstname','$lastname','$contact','$email','$messages')";
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record inserted successfully";
+echo "connected successfully!!!";
+// Create database
+$sql = "CREATE DATABASE AICLformDB";
+if ($conn->query($sql) === TRUE) {//passing the sql here
+  echo "Database created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error creating database: " . $conn->error;
 }
 
-$conn->close();
+$conn->close();//closing connection
 ?>
+</body>
+</html>
