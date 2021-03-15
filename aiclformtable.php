@@ -2,23 +2,26 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "aiclstudents";
+$dbname = "AICLformDB";
 
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
+// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "CREATE TABLE Aicldetail(
-firstname VARCHAR(20) NOT NULL,
-lastname VARCHAR(20) NOT NULL,
-contact VARCHAR(20) NOT NULL,
-email VARCHAR(10) NOT NULL,
-messages  VARCHAR(30) NOT NULL)";
+// sql to create table 
+$sql = "CREATE TABLE AICLTable(
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(30) NOT NULL,
+contact VARCHAR(10) NOT NULL,
+messagetext VARCHAR(50) NOT NULL
+)";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Table AICLformTable created successfully";
+  echo "Table AICLTable created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }

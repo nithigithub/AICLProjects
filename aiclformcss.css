@@ -1,4 +1,5 @@
 .formstyle {
+    background-color: blueviolet;
     padding-top: 20px;
     border: 1px solid cyan;
     padding-bottom: 20px;
@@ -6,13 +7,14 @@
 }
 
 input[type="text"],
-input[type="number"],
-input[type="email"] {
-    border: 1px solid cyan;
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border: 1px solid fuchsia;
 }
 
 textarea.form-control {
-    border: 1px solid cyan;
+    border: 1px solid palevioletred;
 }
 
 button.btn.btn-primary {
