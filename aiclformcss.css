@@ -1,22 +1,20 @@
 .formstyle {
-    background-color: blueviolet;
+    background-color:mediumaquamarine;
     padding-top: 20px;
-    border: 1px solid cyan;
+    border: 1px solid black;
     padding-bottom: 20px;
     margin: 20px;
-}
-
-input[type="text"],
-input[type="text"],
-input[type="email"],
-input[type="number"] {
-    border: 1px solid fuchsia;
-}
-
-textarea.form-control {
-    border: 1px solid palevioletred;
-}
-
-button.btn.btn-primary {
+  }
+  input[type="text"],
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] { 
+    border: 1px solid black;
+  }
+  textarea.form-control {
+    border: 1px solid black;
+  }
+  button.btn.btn-primary {
     text-align: center;
-}
+  }
+  

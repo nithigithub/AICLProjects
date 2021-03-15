@@ -13,7 +13,6 @@ if($conn->connect_error){
     die("connection cannot be established" . $conn->connect_error);
 }
 echo "connection established!!!";
-$conn->close();
-?>
+$conn->close();?>
 </body>
 </html>
